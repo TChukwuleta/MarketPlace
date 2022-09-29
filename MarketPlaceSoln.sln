@@ -7,17 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3AC3BF99-F64
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ED648ED1-379B-4BCC-925D-3BBABF3DC9AF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Api", "Floward.Api\Market.Api.csproj", "{F6C6897A-15B1-474F-A440-6FA62D2AC1A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Api", "Market.Api\Market.Api.csproj", "{F6C6897A-15B1-474F-A440-6FA62D2AC1A3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Domain", "Floward.Domain\Market.Domain.csproj", "{A090C557-6141-4E28-B58A-2293021B79A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Domain", "Market.Domain\Market.Domain.csproj", "{A090C557-6141-4E28-B58A-2293021B79A2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Infrastructure", "Floward.Infrastructure\Market.Infrastructure.csproj", "{1313F2A2-773A-42A2-86CC-68D4F49FAA0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Infrastructure", "Market.Infrastructure\Market.Infrastructure.csproj", "{1313F2A2-773A-42A2-86CC-68D4F49FAA0F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Application", "Floward.Application\Market.Application.csproj", "{B36198BC-C071-4E21-8144-C67EE347D596}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Application", "Market.Application\Market.Application.csproj", "{B36198BC-C071-4E21-8144-C67EE347D596}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Broker", "Floward.Broker\Market.Broker.csproj", "{7E3E12FF-0C53-4C64-AD8C-9278DF021EA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Broker", "Market.Broker\Market.Broker.csproj", "{7E3E12FF-0C53-4C64-AD8C-9278DF021EA8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Webapi.Tests", "Floward.Webapi.Tests\Market.Webapi.Tests.csproj", "{DF14C375-4E39-4EF0-80D3-D35F7F419BB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Webapi.Tests", "Market.Webapi.Tests\Market.Webapi.Tests.csproj", "{DF14C375-4E39-4EF0-80D3-D35F7F419BB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

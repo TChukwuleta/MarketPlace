@@ -16,9 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Floward.Api\Market.Api.csproj" />
-    <ProjectReference Include="..\Floward.Domain\Market.Domain.csproj" />
-    <ProjectReference Include="..\Floward.Infrastructure\Market.Infrastructure.csproj" />
+    <ProjectReference Include="..\Market.Api\Market.Api.csproj" />
+    <ProjectReference Include="..\Market.Domain\Market.Domain.csproj" />
+    <ProjectReference Include="..\Market.Infrastructure\Market.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

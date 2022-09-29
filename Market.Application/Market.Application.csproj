@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Floward.Broker\Market.Broker.csproj" />
-    <ProjectReference Include="..\Floward.Domain\Market.Domain.csproj" />
-    <ProjectReference Include="..\Floward.Infrastructure\Market.Infrastructure.csproj" />
+    <ProjectReference Include="..\Market.Broker\Market.Broker.csproj" />
+    <ProjectReference Include="..\Market.Domain\Market.Domain.csproj" />
+    <ProjectReference Include="..\Market.Infrastructure\Market.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
