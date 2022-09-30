@@ -43,7 +43,7 @@ namespace Market.Infrastructure.Services.Repositories.Base
             }
         }
 
-        public async Task<IReadOnlyList<T>> GetAllAsync()
+        public async Task<List<T>> GetAllAsync()
         {
             try
             {

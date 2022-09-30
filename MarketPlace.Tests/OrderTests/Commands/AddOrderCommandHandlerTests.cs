@@ -28,6 +28,7 @@ namespace MarketPlace.Tests.OrderTests.Commands
             var userRepo = new Mock<IUserRepository>();
             var handler = new AddToCartCommandHandler(_orderRepo.Object, context.Object, userRepo.Object, broker.Object);
             var result = await handler.Handle(new AddToCartCommand(), CancellationToken.None);
+
             Assert.NotNull(result.Entity);
             Assert.Equal(true, result.Succeeded);
         }

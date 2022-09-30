@@ -50,10 +50,10 @@ namespace Market.Broker
                 var type = ea.RoutingKey;
                 if(type == "user.create")
                 {
-                    // Add and save to DB   
+                    // Message for user creation   
                 }
             };
-            channel.BasicConsume(queue: "user.orderservice",
+            channel.BasicConsume(queue: "user.create",
                 autoAck: true,
                 consumer: consumer);
         }

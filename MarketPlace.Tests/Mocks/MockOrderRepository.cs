@@ -15,7 +15,7 @@ namespace MarketPlace.Tests.Mocks
         public static Mock<IOrderRepository> GetOrderRepository()
         {
             var orderRepository = new Mock<IOrderRepository>();
-            var orders = new List<Order>()
+            List<Order> orders = new List<Order>()
             {
 
                 new Order()
@@ -48,18 +48,18 @@ namespace MarketPlace.Tests.Mocks
                 Quantity = 2, 
                 OrderStatus = OrderStatus.OrderPickupAvailable, 
                 UserId = "3ae406ea-aece-41ba-999a-0f86434a3201" 
-            }; 
+            };
             //orders.Add(newOrder);
 
-            orderRepository.Setup(c => c.GetAllAsync()).ReturnsAsync(orders);
-            orderRepository.Setup(c => c.GetByIdAsync(It.IsAny<int>())).Returns((int id) => orders.FirstOrDefault(c => c.Id == id));
+            orderRepository.Setup(c => c.GetAllAsync().Result).Returns(orders);
+            orderRepository.Setup(c => c.GetByIdAsync(It.IsAny<int>()).Result).Returns((int id) => orders.FirstOrDefault(c => c.Id == id));
             orderRepository.Setup(c => c.AddAsync(It.IsAny<Order>())).ReturnsAsync((Order order) =>
             {
                 orders.Add(newOrder);
                 return newOrder;
             });
-            orderRepository.Setup(c => c.UpdateAsync(It.IsAny<Order>())).Callback(() => { return; });
-            orderRepository.Setup(c => c.DeleteAsync(It.IsAny<Order>())).Callback(() => { return; });
+            /*orderRepository.Setup(c => c.UpdateAsync(It.IsAny<Order>())).Callback(() => { return; });
+            orderRepository.Setup(c => c.DeleteAsync(It.IsAny<Order>())).Callback(() => { return; });*/
             return orderRepository;
         }
     }

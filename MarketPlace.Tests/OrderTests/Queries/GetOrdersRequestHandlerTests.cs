@@ -30,5 +30,14 @@ namespace MarketPlace.Tests.OrderTests.Queries
             Assert.NotNull(result.Entity);
             Assert.Equal(true, result.Succeeded);
         }
+
+        [Fact]
+        public async void GetSingleOrderTest()
+        {
+            var handler = new GetOrderByIdQueryHandler(_orderRepo.Object);
+            var result = await handler.Handle(new GetOrderByIdQuery(), CancellationToken.None);
+            result.ShouldBeOfType<Result>();
+            Assert.Equal(true, result.Succeeded);
+        }
     }
 }
