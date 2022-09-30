@@ -29,4 +29,10 @@
     <ProjectReference Include="..\Market.Domain\Market.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ProductTests\Commands\" />
+    <Folder Include="UserTests\Commands\" />
+    <Folder Include="UserTests\Queries\" />
+  </ItemGroup>
+
 </Project>
